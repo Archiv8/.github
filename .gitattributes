@@ -1,0 +1,58 @@
+# Archiv8 gitattributes
+# Version 0.1.3
+# Date 23/04/2019
+# Last Update 11/12/2021
+
+
+
+### ======================================================================== ###
+### TEXT FILES
+### ________________________________________________________________________ ###
+
+## -------------------------------------------------------------------------- ##
+## Default Behavior For All Text Files; Unless Overidden
+## -------------------------------------------------------------------------- ##
+*                 text=auto   eol=lf 
+*                 text        whitespace=blank-at-eol,space-before-tab,-indent-with-non-tab,tab-in-indent,blank-at-eof,cr-at-eol  
+*                 text        tabwidth=2
+
+# ---------------------------------------------------------------------------- #
+# Make it explicit the following generic text files should be normalized
+# crlf -> lf
+# ---------------------------------------------------------------------------- #
+.gitattributes    text         linguist-language=gitattributes
+.gitignore        text         linguist-language=gitignore
+
+# ---------------------------------------------------------------------------- #
+# Make it explicit the following project specific text files should be 
+# normalized crlf -> lf
+# ---------------------------------------------------------------------------- #
+PKGBUILD          text          eol=lf    linguist-language=bash
+.SRCINFO          text          eol=lf    linguist-language=bash
+*.sh              text          eol=lf    linguist-language=bash
+*.install         text          eol=lf    linguist-language=bash
+
+
+
+### ======================================================================== ###
+### BINARY FORMATS
+### ________________________________________________________________________ ###
+
+## -------------------------------------------------------------------------- ##
+## Default Behaviour For All Binary Files; Unless Overidden
+## -------------------------------------------------------------------------- ##
+
+
+## -------------------------------------------------------------------------- ##
+## Binary Formatsfiles That Need To Be Explicitly Declared
+## -------------------------------------------------------------------------- ##
+
+# Image formats
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  #
+*.jpg             binary
+*.png             binary
+*.gif             binary
+
+# Archive formats
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  #
+*.zip  binary

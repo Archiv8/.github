@@ -1,0 +1,5 @@
+{
+  "plugins": [
+    "@unsmudged/remark-preset-lint"
+  ]
+}
