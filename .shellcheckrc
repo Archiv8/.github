@@ -1,0 +1,15 @@
+# Archiv8 .shellcheckrc
+# Version 0.1.1
+# Date 23/04/2019
+# Last Update 09/12/2021
+
+
+### ======================================================================== ###
+### Repository rules for ShellCheck, https://www.shellcheck.net/, for scanning 
+### PKGBUILD and other scripts.  Add per file rules near the top of file as 
+### indicated by comment
+### ======================================================================== ###
+
+# Set shell to bash
+# ---------------------------------------------------------------------------- #
+shell=bash
