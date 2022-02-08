@@ -1,0 +1,51 @@
+name: Upstream Issue
+description: "Report an upstream issue that helps track problems affecting packaging."
+title: "[Upstream]: "
+labels:
+  [
+    "element: src :speedboat:",
+    "status: new :ear:",
+    "type: upstream :speedboat:",
+    "priority: NORMAL :calendar:",
+    "wait: triage :hospital:",
+  ]
+assignees:
+  - rossclarkartist
+body:
+  - type: markdown
+    attributes:
+      value: "_**Thanks for taking the time to report a possible issue with the up stream sources.  For assistance in using this form read the instructions on [submitting an issue report](https://archiv8.github.io/reporting-issues/upstream-issue)**_"
+  - type: input
+    id: upstream-report
+    attributes:
+      label: Upstream report
+      description: Link to the upstream report that relates to the packaging error
+    validations:
+      required: false
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Any further information that may help resolve this issue.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: "The code of conduct and related documents are intended to encourage and grow a healthy community:"
+      options:
+        - label: By submitting this issue I am agreeing to follow Archiv8's [Code of Conduct](https://archiv8.github.io/community/code-of-conduct) and other [community guidelines](https://archiv8.github.io/community)
+          required: true
+  - type: markdown
+    attributes:
+      value: "_**Is there a problem with this form?  Use CTRL+click on the appropriate link below and open a form in a new browser browser tab**_"
+  - type: markdown
+    attributes:
+      value: "[Report an issue with this form](https://github.com/Archiv8/play/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A+&template=FORM_FORM-ISSUE.yml&title=%5BForm+Issue%5D%3A+Issue+with+upstream+form+) or [suggest an improvement](https://github.com/Archiv8/play/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+LOW+%3Aok_hand%3A%2Cwait%3A+triage+%3Ahospital%3A+&template=FORM_FORM-SUGGESTION.yml&title=%5BForm+Suggestion%5D%3A+Improvement+to+upstream+form+)"
+  - type: markdown
+    attributes:
+      value: "(c) Ross Clark and Archiv8 2021 - 2022"
+  - type: markdown
+    attributes:
+      value: "This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License."
