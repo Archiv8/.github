@@ -1,5 +1,5 @@
 name: Upstream Issues and Requests
-description: "Report an issue with upstream code or request a patch be applied. It is not intended to be used in place of issue reports for the source code of the application or library. These should be reported directly to their authors"
+description: "Report an issue with upstream code or request a patch be applied. It is not intended to be used instead of creating upstream issues, these should be reported directly to their authors"
 title: "[UPSTREAM]: "
 labels:
   [
