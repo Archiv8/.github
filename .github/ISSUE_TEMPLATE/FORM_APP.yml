@@ -17,16 +17,16 @@ body:
   - type: textarea
     id: about-issue
     attributes:
-      label: More Information
+      label: Further Information
       description: "Is there more information that will be helpful:"
-      placeholder: "Please give as much information as possible.  Using a bulleted list will improve triage and response times by separating the information into easily readable component parts."
+      placeholder: "Please give as much information as possible.  Using a bulleted list will improve triage and response times by separating the information into easily readable component parts"
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: "The code of conduct and related documents are intended to encourage and grow a healthy community:"
+      label: Community Guidelines
+      description: "The community guidelines are intended to encourage and grow a healthy community:"
       options:
-        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines] (https://archiv8.github.io/community)
+        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
           required: true
   - type: markdown
     attributes:
@@ -39,4 +39,4 @@ body:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"
   - type: markdown
     attributes:
-      value: "This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License."
+      value: "This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License"
