@@ -1,11 +1,11 @@
-name: Other Issue
-description: "Report an issue not covered by other forms"
-title: "[Other]: "
+name: Other Issues and Requests
+description: "Use this form to report an issue or make a request that does not fall neatly within the bounds of other forms"
+title: "[OTHER]: "
 labels:
   [
-    "element: other :question:",
+    "element: com :family:",
     "status: new :ear:",
-    "priority: NORMAL :calendar:",
+    "priority: CRITICAL :clock1:",
     "wait: triage :hospital:",
   ]
 assignees:
@@ -13,15 +13,13 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to make contact.  For assistance in using this form [read the instructions](https://archiv8.github.io/reporting-issues/other)**_"
+      value: "_**Thanks for taking the time to let Archiv8 know of a problem within the community.  For assistance in using this form see [reporting an issue within the community](https://archiv8.github.io/reporting-issues/community)**_"
   - type: textarea
-    id: issue-info
+    id: about-issue
     attributes:
-      label: What do you want to tell Archiv8 about?
-      description: Tell Archiv8 the reason you are making contact using this form instead one of the other available forms.  Then detail your issue or suggestions.
-      render: textarea
-    validations:
-      required: false
+      label: About the issue
+      description: "Is there more information that will be helpful:"
+      placeholder: "Please give as much information as possible.  Using a bulleted list will improve triage and response times by separating the information into easily readable component parts."
   - type: checkboxes
     id: terms
     attributes:
@@ -35,10 +33,10 @@ body:
       value: "_**Is there a problem with this form?  Use CTRL+click on the appropriate link below and open a form in a new browser browser tab**_"
   - type: markdown
     attributes:
-      value: "[Report an issue with this form](https://github.com/Archiv8/play/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A+&template=FORM_FORM-ISSUE.yml&title=%5BForm+Issue%5D%3A+Issue+with+other+form+) or [suggest an improvement](https://github.com/Archiv8/play/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+LOW+%3Aok_hand%3A%2Cwait%3A+triage+%3Ahospital%3A+&template=FORM_FORM-SUGGESTION.yml&title=%5BForm+Suggestion%5D%3A+Improvement+to+other+form+)"
+      value: "[Report an issue with this form]("
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"
   - type: markdown
     attributes:
-      value: "This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License"
+      value: "This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License."

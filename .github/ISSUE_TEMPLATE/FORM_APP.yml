@@ -1,6 +1,6 @@
-name: Security Issues
-description: "Use this form to report any security problems"
-title: "[SECURITY]: "
+name: Archiv8 Applications Issues and Requests
+description: "Use this form to report an issue or suggest a change to and Archiv8 application or library"
+title: "[APPLICATION]: "
 labels:
   [
     "element: com :family:",
@@ -17,7 +17,7 @@ body:
   - type: textarea
     id: about-issue
     attributes:
-      label: About the issue
+      label: More Information
       description: "Is there more information that will be helpful:"
       placeholder: "Please give as much information as possible.  Using a bulleted list will improve triage and response times by separating the information into easily readable component parts."
   - type: checkboxes
@@ -26,7 +26,7 @@ body:
       label: Code of Conduct
       description: "The code of conduct and related documents are intended to encourage and grow a healthy community:"
       options:
-        - label: By submitting this issue I am agreeing to follow Archiv8's [Code of Conduct](https://archiv8.github.io/community/code-of-conduct) and other [community guidelines](https://archiv8.github.io/community)
+        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines] (https://archiv8.github.io/community)
           required: true
   - type: markdown
     attributes:

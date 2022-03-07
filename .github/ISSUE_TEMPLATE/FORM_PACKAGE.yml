@@ -1,6 +1,6 @@
-name: Security Issues
-description: "Use this form to report any security problems"
-title: "[SECURITY]: "
+name: Package Issues and Requests
+description: "Use this form to report an issue, suggest a change, or alert Archiv8 of an outdated package."
+title: "[PACKAGE]: "
 labels:
   [
     "element: com :family:",
