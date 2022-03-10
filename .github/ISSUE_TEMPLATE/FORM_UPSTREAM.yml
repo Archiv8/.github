@@ -13,13 +13,13 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to let Archiv8 know of a problem with the upstream sources used in one of the packages.  For assistance in using this form see [reporting an issue regarding upstream source code](https://archiv8.github.io/reporting-issues/community)**_"
+      value: "_**Thanks for taking the time to let Archiv8 know of a problem with the upstream sources used in one of the packages.  For assistance in using this form see [reporting an issue regarding upstream source code](https://archiv8.github.io/reporting-issues/community)**_ on the Archiv8 website. It is recommended that you open this link in a new tab or window so no data in this form is lost"
   - type: textarea
-    id: about-issue
+    id: further-info
     attributes:
       label: Further Information
       description: "Is there more information that will be helpful:"
-      placeholder: "Please give as much information as possible.  Using a bulleted list will improve triage and response times by separating the information into easily readable component parts"
+      placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
   - type: checkboxes
     id: terms
     attributes:
@@ -30,10 +30,7 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "_**Does this form need improvement? It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
-  - type: markdown
-    attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_UPSTREAM)"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_UPSTREAM). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"
