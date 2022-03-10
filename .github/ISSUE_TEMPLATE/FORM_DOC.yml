@@ -1,0 +1,39 @@
+name: Improvements to Documentation
+description: "Report an issue or suggest an improvement to documentation"
+title: "[APPLICATION]: "
+labels:
+  [
+    "element: app :computer:",
+    "status: new :ear:",
+    "priority: NORMAL :calendar:",
+    "wait: triage :hospital:",
+  ]
+assignees:
+  - rossclarkartist
+body:
+  - type: markdown
+    attributes:
+      value: "_**Thanks for taking the time to fill out this form which will help improve the documentation for Archiv8.  For assistance guidance is provided on the help pages of the [Archiv8 website](https://archiv8.github.io/reporting-issues/community)**_. It is recommended that you open this link in a new tab or window so no data in this form is lost"
+  - type: textarea
+    id: further-info
+    attributes:
+      label: Further Information
+      description: "Is there more information that will be helpful:"
+      placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Community Guidelines
+      description: "The community guidelines are intended to encourage and grow a healthy community:"
+      options:
+        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
+          required: true
+  - type: markdown
+    attributes:
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_DOC). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
+  - type: markdown
+    attributes:
+      value: "(c) Ross Clark and Archiv8 2021 - 2022"
+  - type: markdown
+    attributes:
+      value: "This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License"
