@@ -1,5 +1,5 @@
-name: Archiv8 Applications Issues and Requests
-description: "Use this form to report an issue or suggest a change to and Archiv8 application or library"
+name: Archiv8 Apps and Libraries
+description: "Report an issue, make a request or suggest an improvement for an Archiv8 application or library"
 title: "[APPLICATION]: "
 labels:
   [
@@ -13,13 +13,30 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to let Archiv8 know of a problem within the community.  For assistance in using this form see [reporting an issue within the community](https://archiv8.github.io/reporting-issues/community)**_"
+      value: "_**Thanks for taking the time to to fill out this form.  It will help improve Archiv8 it's applications and libraries.  For help see the [guide for this form](https://archiv8.github.io/reporting-issues/community)**_. It is recommended that you open this link in a new tab or window so no data in this form is lost"
+  - type: dropdown
+    id: report-type
+    attributes:
+      label: What needs to be addressed?
+      description: "Choose the category that best fits the topic"
+      options:
+        - "An issue"
+        - "A new feature"
+        - "A new application or library"
+    validations:
+      required: true
   - type: textarea
-    id: about-issue
+    id: main-info-what
+    attributes:
+      label: Description
+      description: "Describe what needs to be addressed:"
+      placeholder: "Please give as much information as possible. Use of available formatting is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks. If the information in this text area is becoming too complex it may be better to file multiple issues"
+  - type: textarea
+    id: further-info
     attributes:
       label: Further Information
       description: "Is there more information that will be helpful:"
-      placeholder: "Please give as much information as possible.  Using a bulleted list will improve triage and response times by separating the information into easily readable component parts"
+      placeholder: "Please give as much information as possible.  Use of available formatting is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
   - type: checkboxes
     id: terms
     attributes:
@@ -30,10 +47,7 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "_**Does this form need improvement? It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
-  - type: markdown
-    attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_APP)"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_APP). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"
