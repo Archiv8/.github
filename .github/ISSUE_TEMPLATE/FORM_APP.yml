@@ -14,17 +14,16 @@ body:
   - type: markdown
     attributes:
       value: "_**Thanks for taking the time to to fill out this form.  It will help improve Archiv8 it's applications and libraries.  For help see the [guide for this form](https://archiv8.github.io/reporting-issues/community)**_. It is recommended that you open this link in a new tab or window so no data in this form is lost"
-  - type: dropdown
+  - type: checkboxes
     id: report-type
     attributes:
-      label: What needs to be addressed?
-      description: "Choose the category that best fits the topic"
+      label: "What needs to be addressed?"
+      description: "Choose the category that best fits the topic:"
       options:
-        - "An issue"
-        - "A new feature"
-        - "A new application or library"
-    validations:
-      required: true
+        - label: "Issue Report"
+        - label: "Feature Request"
+        - label: "New App or Library"
+          required: true
   - type: textarea
     id: main-info-what
     attributes:
