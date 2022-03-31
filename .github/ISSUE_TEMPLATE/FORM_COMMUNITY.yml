@@ -3,8 +3,8 @@ description: "Report a problem with the community"
 title: "[COMMUNITY]: "
 labels:
   [
-    "element: com :family:",
-    "status: new :ear:",
+    "element: community :family:",
+    "status: new :phone:",
     "priority: CRITICAL :clock1:",
     "wait: triage :hospital:",
   ]
@@ -13,12 +13,15 @@ assignees:
 body:
   - type: markdown
     attributes:
+      value: "_**To raise a problem that is visible only to team members you can use Github Disscussions by selecting the Discussions item in the navigation bar above this form. When creating the post select the option to create a private post**_"
+  - type: markdown
+    attributes:
       value: "_**Thanks for taking the time to let Archiv8 know of a problem with the community.  For assistance see [reporting an issue with the community](https://archiv8.github.io/reporting-issues/community)**_. It is recommended that you open this link in a new tab or window so no data in this form is lost"
   - type: textarea
-    id: further-info
+    id: about-problem
     attributes:
-      label: Further Information
-      description: "Is there more information that will be helpful:"
+      label: About the problem
+      description: "Describe the problem you are experiencing:"
       placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
   - type: checkboxes
     id: terms
