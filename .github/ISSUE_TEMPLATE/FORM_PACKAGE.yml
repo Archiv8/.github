@@ -25,37 +25,38 @@ body:
   - type: checkboxes
     id: latest-version-package
     attributes:
-      label: "Are you using the latest version of the package? If you are unsure go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page."
-      description: "Select either yes or no"
+      label: "Are you using the latest version of the package? Select either yes or no"
+      description: "If you are unsure go to the appropriate repository at https://github.com/Archiv8.  Once you have selected the repository click on tags, then check the version number of your package matches the top release on the page"
       options:
         - label: "yes"
         - label: "no"
   - type: checkboxes
     id: latest-version-depends
     attributes:
-      label: Are you using the latest version of the package dependencies? If you are unsure open the package build and look for a comment above packages in the makedepends and depends variables entitled Archiv8 / AUR.  Then go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page.
-      description: Select either yes or no
+      label: Are you using the latest version of the package dependencies?
+      description: If you are unsure open the package build and look for a comment above packages in the makedepends and depends variables entitled Archiv8 / AUR.  Then go to the appropriate repository at https://github.com/Archiv8.  Once you have selected the repository then check the version number of your package matches the top release on the page
       options:
         - label: "yes"
         - label: "no"
+          required: true
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: "Describe what happened in as much detail as possible."
-      placeholder: "Please give as much information as possible, including how you were building the package.  Were you using a chroot? Were there missing dependencies?  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks.  Attach any log messages here."
+      description: "Describe what happened in as much detail as possible. Please give as much information as possible, including how you were building the package.  Were you using a chroot? Were there missing dependencies?  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks.  A numbered list will help by presenting the order in which you built the package.  Attach any log messages here"
+      value: "some"
   - type: textarea
     id: further-info
     attributes:
       label: Further Information
-      description: "Is there more information that will be helpful:"
-      placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+      description: "Is there more information that will be helpful. Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+      value: "some"
   - type: textarea
     id: fix
     attributes:
       label: Fixing the issue
-      description: "Are you able to fix the issue?"
-      placeholder: "If you have been given the appropriate permissions you will be able to create a pull request directly from the repository.  If you don't have the appropriate permissions you can create a fork of the repository and then a pull request from that. Finally, you can create a patch against the source code and upload it here or copy and paste any contributions into this text area.  https://docs.github.com/en/pull-requests has further information to assist you.  There is also help provided on the Archiv8 website at https://Archiv8.github.io/contributing"
+      description: "Are you able to fix the issue? If you have been given the appropriate permissions you will be able to create a pull request directly from the repository.  If you don't have the appropriate permissions you can create a fork of the repository and then a pull request from that. Finally, you can create a patch against the source code and upload it here or copy and paste any contributions into this text area.  https://docs.github.com/en/pull-requests has further information to assist you.  There is also help provided on the Archiv8 website at https://Archiv8.github.io/contributing"
+      value: "Some"
   - type: checkboxes
     id: terms
     attributes:
