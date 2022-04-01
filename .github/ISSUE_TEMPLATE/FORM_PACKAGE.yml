@@ -14,12 +14,48 @@ body:
   - type: markdown
     attributes:
       value: "_**Thanks for letting us know about an issue or suggestion.  For assistance see the [guidelines](https://archiv8.github.io/reporting-issues/community)**_ on the Archiv8 website. It is recommended that you open this link in a new tab or window so no data in this form is lost"
+  - type: input
+    id: package-name
+    attributes:
+      label: "Which package is effected by the issue?"
+      description: "Give the  full name of the package including it's version number.  It is the name of the package you have downloaded, for example nvm-0.39.1-1"
+      placeholder: "netbeans-12.5-1"
+    validations:
+      required: true
+  - type: checkboxes
+    id: latest-version
+    attributes:
+      label: Are you using the latest version of the package? If you are unsure go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page.
+      description: Select either yes or no
+      options:
+        - label: yes
+        - label: no
+  - type: checkboxes
+    id: latest-version
+    attributes:
+      label: Are you using the latest version of the package dependencies? If you are unsure open the package build and look for a comment above packages in the makedepends and depends variables entitled Archiv8 / AUR.  Then go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page.
+      description: Select either yes or no
+      options:
+        - label: yes
+        - label: no
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: "Describe what happened in as much detail as possible."
+      placeholder: "Please give as much information as possible, including how you were building the package.  Were you using a chroot? Were there missing dependencies?  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks.  Attach any log messages here."
   - type: textarea
     id: further-info
     attributes:
       label: Further Information
       description: "Is there more information that will be helpful:"
       placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+  - type: textarea
+    id: fix
+    attributes:
+      label: Fixing the issue
+      description: "Are you able to fix the issue?"
+      placeholder: "If you have been given the appropriate permissions you will be able to create a pull request directly from the repository.  If you don't have the appropriate permissions you can create a fork of the repository and then a pull request from that. Finally, you can create a patch against the source code and upload it here or copy and paste any contributions into this text area.  https://docs.github.com/en/pull-requests has further information to assist you.  There is also help provided on the Archiv8 website at https://Archiv8.github.io/contributing"
   - type: checkboxes
     id: terms
     attributes:
@@ -30,7 +66,7 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_PACKAGE). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_PACKAGE). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"
