@@ -23,22 +23,21 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: latest-version
+    id: latest-version-package
     attributes:
       label: "Are you using the latest version of the package? If you are unsure go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page."
       description: "Select either yes or no"
       options:
         - label: "yes"
         - label: "no"
-
   - type: checkboxes
-    id: latest-version
+    id: latest-version-depends
     attributes:
       label: Are you using the latest version of the package dependencies? If you are unsure open the package build and look for a comment above packages in the makedepends and depends variables entitled Archiv8 / AUR.  Then go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page.
       description: Select either yes or no
       options:
-        - label: yes
-        - label: no
+        - label: "yes"
+        - label: "no"
   - type: textarea
     id: what-happened
     attributes:
