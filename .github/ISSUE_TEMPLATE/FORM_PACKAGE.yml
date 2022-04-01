@@ -25,11 +25,12 @@ body:
   - type: checkboxes
     id: latest-version
     attributes:
-      label: Are you using the latest version of the package? If you are unsure go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page.
-      description: Select either yes or no
+      label: "Are you using the latest version of the package? If you are unsure go to the appropriate repository, click on tags, then check the version number of your package matches the top release on the page."
+      description: "Select either yes or no"
       options:
-        - label: yes
-        - label: no
+        - label: "yes"
+        - label: "no"
+
   - type: checkboxes
     id: latest-version
     attributes:
