@@ -13,7 +13,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to let Archiv8 know of a problem with the upstream sources used in one of the packages.  This form is not intended to replace the way issues are handle upstream and should not be used as an alternitive.  It can be used to track any upstream issues and fixes that effect a package in this organization. For assistance in using this form see [reporting an issue regarding upstream source code](https://archiv8.github.io/reporting-issues/community)**_ on the Archiv8 website. It is recommended that you open this link in a new tab or window so no data in this form is lost"
+      value: "_**Thanks for taking the time to let Archiv8 know of a problem with the upstream sources used in one of the packages.  This form is not intended to replace the way issues are handle upstream and should not be used as an alternitive.  It can be used to track any upstream issues and fixes that effect a package in this organization. Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
     id: package-name
     attributes:
@@ -49,7 +49,7 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_UPSTREAM). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_UPSTREAM). _**Open the link below in a new browser tab or window to prevent the loss of data**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"

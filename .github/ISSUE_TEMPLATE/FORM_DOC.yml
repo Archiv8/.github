@@ -13,7 +13,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to fill out this form which will help improve the documentation for Archiv8.  For assistance guidance is provided on the help pages of the [Archiv8 website](https://archiv8.github.io/reporting-issues/community)**_. It is recommended that you open this link in a new tab or window so no data in this form is lost"
+      value: "_**Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
     id: page-name
     attributes:
@@ -40,8 +40,8 @@ body:
     id: fix
     attributes:
       label: Fixing the issue
-      description: "Are you able to fix the issue?"
-      placeholder: "If you have been given the appropriate permissions you will be able to create a pull request directly from the repository.  If you don't have the appropriate permissions you can create a fork of the repository and then a pull request from that. Finally, you can create a patch against the source code and upload it here or copy and paste any contributions into this text area or use it to make suggestions.  https://docs.github.com/en/pull-requests has further information to assist you.  There is also help provided on the Archiv8 website at https://Archiv8.github.io/contributing"
+      description: "Is there a solution available to fix the issue?"
+      placeholder: "Help is provided on the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
   - type: checkboxes
     id: terms
     attributes:
@@ -52,7 +52,7 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_DOC). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_DOC). _**Open the link in a new browser tab or window to prevent the loss of data**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"

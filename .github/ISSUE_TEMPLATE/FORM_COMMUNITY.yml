@@ -1,5 +1,5 @@
 name: Community
-description: "Report a problem with the community"
+description: "Report an issue with the community or to raise a issue that is visible only to team members use Github Disscussions"
 title: "[COMMUNITY]: "
 labels:
   [
@@ -13,16 +13,16 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**To raise a problem that is visible only to team members you can use Github Disscussions by selecting the Discussions item in the navigation bar above this form. When creating the post select the option to create a private post**_"
+      value: "_**To raise a issue that is visible only to team members use Github Disscussions.  Select the Discussions menu item in the navigation bar above this form. When creating the message select the option to make the post private**_"
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to let Archiv8 know of a problem with the community.  For assistance see [reporting an issue with the community](https://archiv8.github.io/reporting-issues/community)**_. It is recommended that you open this link in a new tab or window so no data in this form is lost"
+      value: "Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: textarea
-    id: about-problem
+    id: about-issue
     attributes:
-      label: About the problem
-      description: "Describe the problem you are experiencing:"
-      placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+      label: "About the issue"
+      description: "Describe the issue giving as much information as possible.  "
+      placeholder: "Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
   - type: checkboxes
     id: terms
     attributes:
@@ -33,7 +33,7 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_COMMUNITY). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_COMMUNITY). _**Open the link in a new browser tab or window to prevent the loss of data**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"

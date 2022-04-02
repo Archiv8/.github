@@ -1,0 +1,75 @@
+name: Outdated Package
+description: "Use this form to report an issue or suggest a change to a current package"
+title: "[PACKAGE]: "
+labels:
+  [
+    "element: package :gift:",
+    "status: new :ear:",
+    "priority: CRITICAL :clock1:",
+    "wait: triage :hospital:",
+  ]
+assignees:
+  - rossclarkartist
+body:
+  - type: markdown
+    attributes:
+      value: "_**Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+  - type: input
+    id: package-name
+    attributes:
+      label: "Which package is effected by the issue?"
+      description: "Give the  full name of the package including it's version number.  It is the name of the package you have downloaded, for example nvm-0.39.1-1"
+      placeholder: "netbeans-12.5-1"
+    validations:
+      required: true
+  - type: checkboxes
+    id: latest-version-package
+    attributes:
+      label: "Are you using the latest version of the package? Select either yes or no"
+      description: "If you are unsure go to the appropriate repository at https://github.com/Archiv8.  Once you have selected the repository click on tags, then check the version number of your package matches the top release on the page"
+      options:
+        - label: "yes"
+        - label: "no"
+  - type: checkboxes
+    id: latest-version-depends
+    attributes:
+      label: Are you using the latest version of the package dependencies?
+      description: If you are unsure open the package build and look for a comment above packages in the makedepends and depends variables entitled Archiv8 / AUR.  Then go to the appropriate repository at https://github.com/Archiv8.  Once you have selected the repository then check the version number of your package matches the top release on the page
+      options:
+        - label: "yes"
+        - label: "no"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: "Describe what happened in as much detail as possible. Please give as much information as possible, including how you were building the package.  Were you using a chroot? Were there missing dependencies?  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks.  A numbered list will help by presenting the order in which you built the package.  Attach any log messages here"
+      placeholder: "some"
+  - type: textarea
+    id: further-info
+    attributes:
+      label: Further Information
+      description: "Is there more information that will be helpful. Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+      placeholder: "some"
+  - type: textarea
+    id: fix
+    attributes:
+      label: "Can you help fix the issue?"
+      description: "Supporting Archiv8"
+      placeholder: "Guidance is provided through the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Community Guidelines
+      description: "The community guidelines are intended to encourage and grow a healthy community:"
+      options:
+        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
+          required: true
+  - type: markdown
+    attributes:
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_PACKAGE). _**Open the link below in a new browser tab or window to prevent the loss of data**_"
+  - type: markdown
+    attributes:
+      value: "(c) Ross Clark and Archiv8 2021 - 2022"
+  - type: markdown
+    attributes:
+      value: "This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License"

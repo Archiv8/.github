@@ -4,13 +4,15 @@ Common GitHub resources that are used automatically across the repository.  Thes
 
 + Issue Templates
   + Configuration, [config.yml](.github/ISSUE_TEMPLATE/config.yml)
-  + Community, [FORM-COMMUNITY.yml](.github/ISSUE_TEMPLATE/FORM-COMMUNITY.yml)
-  + Other, [FORM-OTHER.yml](.github/ISSUE_TEMPLATE/FORM-OTHER.yml)
-  + Outdated Package, [FORM-OUTDATED.yml](.github/ISSUE_TEMPLATE/FORM-OUTDATED.yml)
-  + Packaging, [FORM-PACKAGING.yml](.github/ISSUE_TEMPLATE/FORM-PACKAGING.yml)
-  + Request, [FORM-REQUEST.yml](.github/ISSUE_TEMPLATE/FORM-REQUEST.yml)
-  + Security, [FORM-SECURITY.yml](.github/ISSUE_TEMPLATE/FORM-SECURITY.yml)
-  + Upstream, [FORM-UPSTREAM.yml](.github/ISSUE_TEMPLATE/FORM-UPSTREAM.yml)
+  + Application or Api, [FORM_APP.yml](.github/ISSUE_TEMPLATE/FORM_APP.yml)
+  + Community, [FORM_COMMUNITY.yml](.github/ISSUE_TEMPLATE/FORM_COMMUNITY.yml)
+  + Documentation, [FORM_DOC.yml](.github/ISSUE_TEMPLATE/FORM_DOC_.yml)
+  + Other, [FORM_FORM.yml](.github/ISSUE_TEMPLATE/FORM_FORM.yml)
+  + Package Issue, [FORM_PACKAGE.yml](.github/ISSUE_TEMPLATE/FORM_PACKAGE.yml)
+  + Package Outdated, [FORM_PACKAGE_OUTDATED.yml](.github/ISSUE_TEMPLATE/FORM_PACKAGE_OUTDATED.yml)
+  + Package Request, [FORM_PACKAGE_REQUEST.yml](.github/ISSUE_TEMPLATE/FORM_PACKAGE_REQUEST.yml)
+  + Other, [FORM_OTHER.yml](.github/ISSUE_TEMPLATE/FORM_OTHER.yml.yml)
+  + Upstream, [FORM_UPSTREAM.yml](.github/ISSUE_TEMPLATE/FORM_UPSTREAM.yml)
 + Pull Request Templates
   + Pull Request Template, [PULL-REQUEST-TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE/PULL-REQUEST-TEMPLATE.md)
 + Workflow Templates

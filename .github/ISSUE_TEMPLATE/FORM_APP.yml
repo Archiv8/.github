@@ -4,8 +4,8 @@ title: "[APPLICATION]: "
 labels:
   [
     "element: app :computer:",
-    "status: new :ear:",
-    "priority: NORMAL :calendar:",
+    "status: new :phone:",
+    "priority: LOW :ok_hand:",
     "wait: triage :hospital:",
   ]
 assignees:
@@ -13,7 +13,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to to fill out this form.  It will help improve Archiv8 it's applications and libraries.  For help see the [guide for this form](https://archiv8.github.io/reporting-issues/community)**_. It is recommended that you open this link in a new tab or window so no data in this form is lost"
+      value: "_**Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: checkboxes
     id: report-type
     attributes:
@@ -23,30 +23,29 @@ body:
         - label: "Issue Report"
         - label: "Feature Request"
         - label: "New App or Library"
-          required: true
   - type: textarea
     id: main-info-what
     attributes:
-      label: Description
-      description: "Describe what needs to be addressed:"
-      placeholder: "Please give as much information as possible. Use of available formatting is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks. If the information in this text area is becoming too complex it may be better to file multiple issues"
+      label: "Describe what needs to be addressed"
+      description: "Describe what needs to be addressed"
+      placeholder: "Give as much information as possible. Use of available formatting is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks. If the information in this text area is becoming too complex it may be better to file multiple issues"
   - type: textarea
     id: further-info
     attributes:
-      label: Further Information
+      label: "Further Information"
       description: "Is there more information that will be helpful:"
       placeholder: "Please give as much information as possible.  Use of available formatting is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
   - type: checkboxes
     id: terms
     attributes:
-      label: Community Guidelines
+      label: "Community Guidelines"
       description: "The community guidelines are intended to encourage and grow a healthy community:"
       options:
-        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
+        - label: "By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)"
           required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_APP). _**It is recommended that you open the link below in a new browser tab or window to prevent losing information that ypu have entered here**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_APP). _**Open the link in a new browser tab or window to prevent the loss of data**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"
