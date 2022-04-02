@@ -1,6 +1,6 @@
 name: Improvements to Documentation
 description: "Report an issue or suggest an improvement to documentation"
-title: "[DOCUMENTATION]: "
+title: "[DOCUMENTATION]: Add brief description here"
 labels:
   [
     "element: doc :ledger:",
@@ -13,7 +13,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/support/issues/oudated-package)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
     id: page-name
     attributes:
@@ -25,7 +25,7 @@ body:
   - type: textarea
     id: about-issue
     attributes:
-      label: About the issue
+      label: "About the issue"
       description: "Provide information about the issue and how it effects the documentation:"
       placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
     validations:
@@ -33,22 +33,22 @@ body:
   - type: textarea
     id: further-info
     attributes:
-      label: Further Information
+      label: "Further Information"
       description: "Is there more information that will be helpful:"
       placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
   - type: textarea
     id: fix
     attributes:
-      label: Fixing the issue
-      description: "Is there a solution available to fix the issue?"
-      placeholder: "Help is provided on the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
+      label: "Fixing the issue"
+      description: "Contributions are always welcome"
+      placeholder: "Help on making a contribution is provided on the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
   - type: checkboxes
     id: terms
     attributes:
-      label: Community Guidelines
+      label: "Community Guidelines"
       description: "The community guidelines are intended to encourage and grow a healthy community:"
       options:
-        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
+        - label: "By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community)"
           required: true
   - type: markdown
     attributes:

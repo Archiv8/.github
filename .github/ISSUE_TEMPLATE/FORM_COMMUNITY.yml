@@ -1,6 +1,6 @@
 name: Community
-description: "Report an issue with the community or to raise a issue that is visible only to team members use Github Disscussions"
-title: "[COMMUNITY]: "
+description: "Report an issue within the community. To raise a issue that is visible only to team members use Github Disscussions"
+title: "[COMMUNITY]: Add brief description here"
 labels:
   [
     "element: community :family:",
@@ -16,7 +16,7 @@ body:
       value: "_**To raise a issue that is visible only to team members use Github Disscussions.  Select the Discussions menu item in the navigation bar above this form. When creating the message select the option to make the post private**_"
   - type: markdown
     attributes:
-      value: "Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "Assistance is available for using this form.  See the [reporting an issue within the community](https://archiv8.github.io/support/issues/oudated-package)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: textarea
     id: about-issue
     attributes:
@@ -26,14 +26,14 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Community Guidelines
+      label: "Community Guidelines"
       description: "The community guidelines are intended to encourage and grow a healthy community:"
       options:
-        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
+        - label: "By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community)"
           required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aear%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_COMMUNITY). _**Open the link in a new browser tab or window to prevent the loss of data**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_COMMUNITY). _**Open the link in a new browser tab or window to prevent the loss of data**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"

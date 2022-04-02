@@ -1,10 +1,10 @@
 name: Current Package Issues and Improvements
 description: "Use this form to report an issue or suggest an improvement to a current package"
-title: "[PACKAGE]: "
+title: "[PACKAGE ISSUE]: Add brief description here"
 labels:
   [
     "element: package :gift:",
-    "status: new :ear:",
+    "status: new :phone:",
     "priority: CRITICAL :clock1:",
     "wait: triage :hospital:",
   ]
@@ -13,11 +13,11 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form.  See [reporting an issue with a package](https://archiv8.github.io/support/issues/package-issue) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
     id: package-name
     attributes:
-      label: "Which package is effected by the issue?"
+      label: "Package effected by the issue"
       description: "Give the full name of the package including it's version number.  In most cases it is package-name, hyphen, upstream version, hyphen, package release version. For example nvm-0.39.1-1"
       placeholder: "netbeans-12.5-1"
     validations:
@@ -33,15 +33,15 @@ body:
   - type: checkboxes
     id: release-package
     attributes:
-      label: "Is the downloaded package an official release?  Select either yes or no"
-      description: "Downloading or cloning a package from the main branch is not supported. If unsure got https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page"
+      label: "Is the downloaded package an official Archiv8 release?  Select either yes or no"
+      description: "Downloading or cloning a package from the main branch is not supported. If unsure go to https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page"
       options:
         - label: "yes"
         - label: "no"
   - type: checkboxes
     id: latest-version-depends
     attributes:
-      label: "Are the latest version of the package dependencies installed and available? "
+      label: "Are the latest version of the package dependencies installed and available?"
       description: "Open the package build and look for a comment entitled, Archiv8 / AUR, above packages listed in the makedepends and depends variables. Then go to https://github.com/Archiv8 and find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page"
       options:
         - label: "yes"
@@ -51,26 +51,26 @@ body:
     attributes:
       label: "What happened?"
       description: "Describe what happened in as much detail as possible.  Break the information down into easy to follow steps. Include how the package was being built. For example was a chroot being used or makepkg?"
-      placeholder: "Use of available formatting options is suggested.  For example a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks"
+      placeholder: "Use of available formatting options is suggested.  For example, using a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks"
   - type: textarea
     id: further-info
     attributes:
       label: "Further Information"
       description: "Is there more information that will be helpful. Please give as much information as possible."
-      placeholder: "Use of available formatting options is suggested.  For example a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks"
+      placeholder: "Use of available formatting options is suggested.  For example, using a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks"
   - type: textarea
     id: fix
     attributes:
-      label: Help fixing the issue
-      description: "Can you help fix the issue?"
+      label: "Help fixing the issue"
+      description: "Contributions are always welcome"
       placeholder: "Guidance is provided through the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
   - type: checkboxes
     id: terms
     attributes:
-      label: Community Guidelines
+      label: "Community Guidelines"
       description: "The community guidelines are intended to encourage and grow a healthy community:"
       options:
-        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
+        - label: "By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community)"
           required: true
   - type: markdown
     attributes:

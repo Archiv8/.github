@@ -1,10 +1,10 @@
-name: Upstream Issues and Requests
-description: "Report an issue with upstream code or request a patch be applied. It is not intended to be used instead of creating upstream issues, these should be reported directly to their authors"
-title: "[UPSTREAM]: "
+name: Upstream Reports
+description: "Report an issue with upstream code or request an existing patch be applied. This form is not intended to be used in place of creating upstream issues, these should be reported directly to their authors using their guidelines"
+title: "[UPSTREAM]: Add brief description here"
 labels:
   [
     "element: src :speedboat:",
-    "status: new :ear:",
+    "status: new :phone:",
     "priority: NORMAL :calendar:",
     "wait: triage :hospital:",
   ]
@@ -13,13 +13,13 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Thanks for taking the time to let Archiv8 know of a problem with the upstream sources used in one of the packages.  This form is not intended to replace the way issues are handle upstream and should not be used as an alternitive.  It can be used to track any upstream issues and fixes that effect a package in this organization. Assistance is available when using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/reporting-issues/community)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/support/issues/upstream-issue)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
     id: package-name
     attributes:
       label: "What package does the upstream issue effect?"
-      description: "Give the  full name of the package including it's version number.  It is the name of the package you have downloaded, for example nvm-0.39.1-1"
-      placeholder: "netbeans-12.5-1"
+      description: "Give the name of the package as provided by the upstream sources"
+      placeholder: "netbeans"
   - type: input
     id: issue-link
     attributes:
@@ -30,22 +30,22 @@ body:
   - type: textarea
     id: further-info
     attributes:
-      label: Further Information
-      description: "Is there more information that will be helpful:"
-      placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+      label: "Further Information"
+      description: "Is there more information that will be helpful"
+      placeholder: "Use of available formatting options is suggested.  For example, a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks"
   - type: textarea
     id: fix
     attributes:
-      label: Fixing the issue
-      description: "Are you able to fix the issue?"
-      placeholder: "If you have been given the appropriate permissions you will be able to create a pull request directly from the repository.  If you don't have the appropriate permissions you can create a fork of the repository and then a pull request from that. Finally, you can create a patch against the source code and upload it here or copy and paste any contributions into this text area.  https://docs.github.com/en/pull-requests has further information to assist you.  There is also help provided on the Archiv8 website at https://Archiv8.github.io/contributing"
+      label: "Fixing the issue"
+      description: "Contributions are always welcome"
+      placeholder: "Use of available formatting options is suggested.  For example, use of a a numbered list when describing the fix will improve triage and response times by separating the information into easily identifiable chunks"
   - type: checkboxes
     id: terms
     attributes:
-      label: Community Guidelines
+      label: "Community Guidelines"
       description: "The community guidelines are intended to encourage and grow a healthy community:"
       options:
-        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community/community-guidelines)
+        - label: "By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community)"
           required: true
   - type: markdown
     attributes:
