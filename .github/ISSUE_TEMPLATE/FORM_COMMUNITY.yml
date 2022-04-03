@@ -16,7 +16,7 @@ body:
       value: "_**To raise a issue that is visible only to team members use Github Disscussions.  Select the Discussions menu item in the navigation bar above this form. When creating the message select the option to make the post private**_"
   - type: markdown
     attributes:
-      value: "Assistance is available for using this form.  See the [reporting an issue within the community](https://archiv8.github.io/support/issues/oudated-package)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form.  See the [reporting an issue within the community](https://archiv8.github.io/support/issues/oudated-package) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: textarea
     id: about-issue
     attributes:
