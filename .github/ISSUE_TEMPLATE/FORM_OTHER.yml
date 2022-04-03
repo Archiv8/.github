@@ -13,13 +13,15 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Assistance is available for using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/support/issues/oudated-package)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form.  See the [reporting a miscellaneous issue](https://archiv8.github.io/support/issues/other) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: textarea
     id: issue-info
     attributes:
       label: "About the issue"
       description: "Describe the issue:"
       placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+    validations:
+      required: true
   - type: textarea
     id: further-info
     attributes:

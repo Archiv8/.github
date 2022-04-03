@@ -13,7 +13,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Assistance is available for using this form.  See the [reporting an issue with documentation](https://archiv8.github.io/support/issues/oudated-package)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form.  See the [requesting a new package](https://archiv8.github.io/support/issues/package-request) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
     id: package-name
     attributes:
