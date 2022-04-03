@@ -1,4 +1,4 @@
-name: New Package Request
+name: Package Request
 description: "Use this form to report an issue or suggest a change to a current package"
 title: "[PACKAGE REQUEST]: Add brief description here"
 labels:
@@ -17,45 +17,25 @@ body:
   - type: input
     id: package-name
     attributes:
-      label: "Which package is effected by the issue?"
-      description: "Give the full name of the package including it's version number.  In most cases it is _package-name_, followed by the release number, followed by the repository release number for example nvm-0.39.1-1"
-      placeholder: "netbeans-12.5-1"
+      label: "The package being requested"
+      description: "Give the full name of the of the application as it appears in the upstream sources"
+      placeholder: "ffmpeg"
     validations:
       required: true
-  - type: checkboxes
-    id: latest-version-package
+  - type: input
+    id: src-url
     attributes:
-      label: "Are you using the latest version of the package? Select either yes or no"
-      description: "If you are unsure go to the appropriate repository at https://github.com/Archiv8.  Once you have selected the repository click on tags, then check the version number of your package matches the top release on the page"
-      options:
-        - label: "yes"
-        - label: "no"
-  - type: checkboxes
-    id: latest-version-depends
-    attributes:
-      label: "Are you using the latest version of the package dependencies?"
-      description: "If you are unsure open the package build and look for a comment above packages in the makedepends and depends variables entitled Archiv8 / AUR.  Then go to the appropriate repository at https://github.com/Archiv8.  Once you have selected the repository then check the version number of your package matches the top release on the page"
-      options:
-        - label: "yes"
-        - label: "no"
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: "What happened?"
-      description: "Describe what happened in as much detail as possible. Please give as much information as possible, including how you were building the package.  Were you using a chroot? Were there missing dependencies?  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks.  A numbered list will help by presenting the order in which you built the package.  Attach any log messages here"
-      placeholder: "some"
-  - type: textarea
-    id: further-info
-    attributes:
-      label: "Further Information"
-      description: "Is there more information that will be helpful. Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
-      placeholder: "some"
+      label: "The url for the upstream sources"
+      description: "Give the url of the upstream sources"
+      placeholder: "https://github.com/an/app"
+    validations:
+      required: true
   - type: textarea
     id: fix
     attributes:
       label: "Supporting Archiv8"
       description: "Community contributions are always welcomed"
-      placeholder: "Guidance is provided through the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
+      placeholder: "Guidance is on creating a new package is provided through the Archiv8 website at https://Archiv8.github.io/contributing/packages."
   - type: checkboxes
     id: terms
     attributes:

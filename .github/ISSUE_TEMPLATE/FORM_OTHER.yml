@@ -31,7 +31,7 @@ body:
     attributes:
       label: "Fixing the issue"
       description: "Contributions are always welcome"
-      placeholder: "If you have been given the appropriate permissions you will be able to create a pull request directly from the repository.  If you don't have the appropriate permissions you can create a fork of the repository and then a pull request from that. Finally, you can create a patch against the source code and upload it here or copy and paste any contributions into this text area or use it to make suggestions.   https://docs.github.com/en/pull-requests has further information to assist you.  There is also help provided on the Archiv8 website at https://Archiv8.github.io/contributing"
+      placeholder: "Guidance is provided through the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
   - type: checkboxes
     id: terms
     attributes:

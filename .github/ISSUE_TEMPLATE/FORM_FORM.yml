@@ -1,4 +1,4 @@
-name: Form Issues and Requests
+name: Form Improvements
 description: "Use this form to report an issue or suggest a change to a form"
 title: "[FORM]: Add brief description here"
 labels:
@@ -13,19 +13,19 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Assistance is available for using this form. See the [reporting an issue with documentation](https://archiv8.github.io/support/issues/oudated-package)on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form. See the [reporting an issue with documentation](https://archiv8.github.io/support/issues/oudated-package) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
     id: form-name
     attributes:
       label: "Form Name"
-      description: "Give the name of the form using either the title at the top of the page or the yaml file being used.  For example, Issue: Form Issues and Requests, or, FORM_FORM.yml"
-      placeholder: "The name of the form if it doesn't appear int the title above"
+      description: "Give the name of the form using either the title at the top of the page or the yaml file being used.  For example, with the current form the name would be either, Form Improvements, or, FORM_FORM.yml"
+      placeholder: "The name of the form if it doesn't appear in the title above"
   - type: textarea
     id: about-issue
     attributes:
-      label: "About the issue"
-      description: "Describe the issue that you are experiencing and how it effects your experience:"
-      placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+      label: "About the issue or improvement"
+      description: "Describe the issue or improvement in as much detail as possible"
+      placeholder: "Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
   - type: textarea
     id: further-info
     attributes:
@@ -37,7 +37,7 @@ body:
     attributes:
       label: "Fixing the issue"
       description: "Contributions are always welcome"
-      placeholder: "If you have been given the appropriate permissions you will be able to create a pull request directly from the repository.  If you don't have the appropriate permissions you can create a fork of the repository and then a pull request from that. Finally, you can create a patch against the source code and upload it here or copy and paste any contributions into this text area or use it to make suggestions.  https://docs.github.com/en/pull-requests has further information to assist you.  There is also help provided on the Archiv8 website at https://Archiv8.github.io/contributing"
+      placeholder: "Guidance is provided through the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
   - type: checkboxes
     id: terms
     attributes:
