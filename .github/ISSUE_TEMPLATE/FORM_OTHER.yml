@@ -1,5 +1,5 @@
 name: General Issues
-description: "Suggestions and improvemments for documentation, forms, or anything else that is not covered by another form"
+description: "Suggestions and improvements for documentation, forms, or anything else that is not covered by another form"
 title: "[ISSUE]: Add brief description here"
 labels:
   [
@@ -28,8 +28,6 @@ body:
         - Something else
     validations:
       required: true
-  - type: input
-    id: page-name
   - type: textarea
     id: about-issue
     attributes:
