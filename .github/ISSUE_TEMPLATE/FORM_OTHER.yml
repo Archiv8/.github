@@ -1,9 +1,8 @@
-name: Other Issues and Requests
-description: "Report an issue or make a request that does not fall neatly within the bounds of other forms"
-title: "[OTHER]: Add brief description here"
+name: General Issues
+description: "Suggestions and improvemments for documentation, forms, or anything else that is not covered by another form"
+title: "[ISSUE]: Add brief description here"
 labels:
   [
-    "element: other :question:",
     "status: new :phone:",
     "priority: NORMAL :calendar:",
     "wait: triage :hospital:",
@@ -13,12 +12,37 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "_**Assistance is available for using this form.  See the [reporting a miscellaneous issue](https://archiv8.github.io/support/issues/other) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+      value: "_**Assistance is available for using this form.  See the information about [reporting a general issue](https://archiv8.github.io/support/issues/general) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
+  - type: dropdown
+    id: general-type
+    attributes:
+      label: Issue Type
+      description: What is the type of issue you are reporting
+      multiple: true
+      options:
+        - Accessability Improvement
+        - Documentation Improvement
+        - Licensing Issue
+        - Attribution Issue
+        - Website Improvement
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: page-name
   - type: textarea
-    id: issue-info
+    id: about-issue
     attributes:
       label: "About the issue"
-      description: "Describe the issue:"
+      description: "Provide information about the issue. and how it effects the documentation:"
+      placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
+    validations:
+      required: true
+  - type: textarea
+    id: effects
+    attributes:
+      label: "Effects of the issue"
+      description: "How does the issue effect you:"
       placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
     validations:
       required: true
@@ -33,7 +57,7 @@ body:
     attributes:
       label: "Fixing the issue"
       description: "Contributions are always welcome"
-      placeholder: "Guidance is provided through the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
+      placeholder: "Help on making a contribution is provided on the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information"
   - type: checkboxes
     id: terms
     attributes:
@@ -44,7 +68,7 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_OTHER). _**Open the link in a new browser tab or window to prevent the loss of data**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_DOC). _**Open the link in a new browser tab or window to prevent the loss of data**_"
   - type: markdown
     attributes:
       value: "(c) Ross Clark and Archiv8 2021 - 2022"
