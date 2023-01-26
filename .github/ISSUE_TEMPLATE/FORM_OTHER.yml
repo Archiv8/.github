@@ -1,5 +1,5 @@
-name: General Issues
-description: "Suggestions and improvements for documentation, forms, or anything else that is not covered by another form"
+name: Other Issues
+description: "Use for suggestions and improvements to documentation, forms, or anything else that is not covered by another form"
 title: "[ISSUE]: Add brief description here"
 labels:
   [
@@ -32,7 +32,7 @@ body:
     id: about-issue
     attributes:
       label: "About the issue"
-      description: "Provide information about the issue. and how it effects the documentation:"
+      description: "Provide information about the issue and how it effects the documentation:"
       placeholder: "Please give as much information as possible.  Use of available formatting options is suggested, e.g. a bulleted list will improve triage and response times by separating the information into easily identifiable chunks"
     validations:
       required: true
