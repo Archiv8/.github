@@ -40,3 +40,23 @@ body:
         - label: "no"
     validations:
       required: true
+  - type: checkboxes
+    id: package-updated
+    attributes:
+      label: Arch Linux
+      description: Is the latest version of the package from the Archiv8 repository being built. If unsure go to https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page
+      options:
+        - label: "yes"
+        - label: "no"
+    validations:
+      required: true
+  - type: dropdown
+    id: build-env
+    attributes:
+      label: How is the package being built?
+      description: What method is being used to build the package?
+      options:
+        - makepkg
+        - other
+    validations:
+      required: true
