@@ -1,5 +1,5 @@
 name: Package Issues
-description: "Use this form to report an issue or suggest an improvement to a current package"
+description: "Use this form to report an issue, suggest an improvement or report an outdated package"
 title: "[PACKAGE ISSUE]: Add brief description here"
 labels:
   [
@@ -15,21 +15,47 @@ body:
     attributes:
       value: "_**Assistance is available for using this form.  See [reporting an issue with a package](https://archiv8.github.io/support/issues/package-issue) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
-    id: package-name
-    attributes:
-      label: "Package effected by the issue"
-      description: "Give the full name of the package including it's version number.  In most cases it is package-name, hyphen, upstream version, hyphen, package release version. For example nvm-0.39.1-1"
-      placeholder: "netbeans-12.5-1"
-    validations:
-      required: true
+      id: package-name
+      attributes:
+        label: "Package effected by the issue"
+        description: "Give the full name of the package"
+        placeholder: "pacman"
+      validations:
+        required: true
+  - type: dropdown
+      id: issue-type
+      attributes:
+        label: "What type of issue are you experiencing?"
+        multiple: true
+        options:
+          - Package is out of date
+          - Package will not build
+          - Request a new package
+          - Other
+      validations:
+        required: true
+  - type: input
+      id: other-issue
+        label: "If other was selected give a one sentence description"
+        placeholder: "The package is ..."
+      validations:
+      required: false
+  - type: input
+      id: issue-version
+        label: "Package out of date"
+        description: "If the package is out of date what is the latest upstream version."
+        placeholder: "0.8.2"
+      validations:
+      required: false
   - type: checkboxes
-    id: latest-version-package
+    id: issue-upstream
     attributes:
-      label: "Is the package being built the latest version? Select either yes or no"
-      description: "If unsure go to https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page"
+      label: "Upstream Issue"
+      description: "Have you looked to see whether the build issue has been reported upstream"
       options:
         - label: "yes"
         - label: "no"
+  - type:
   - type: checkboxes
     id: release-package
     attributes:
