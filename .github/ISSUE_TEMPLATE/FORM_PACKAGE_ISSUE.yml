@@ -55,24 +55,24 @@ body:
       label: Upstream Issue
       description: Have you looked to see whether the build issue has been reported upstream
       options:
-        - yes
-        - no
+        - "yes"
+        - "no"
   - type: checkboxes
     id: release-package
     attributes:
       label: Is the downloaded package an official Archiv8 release?  Select either yes or no
       description: Downloading or cloning a package from the main branch is not supported. If unsure go to https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page
       options:
-        - yes
-        - no
+        - "yes"
+        - "no"
   - type: checkboxes
     id: latest-version-depends
     attributes:
       label: Are the latest versions of the package dependencies available and installed?
       description: Open the package build and look for a comment entitled, Archiv8 / AUR, above packages listed in the makedepends and depends variables. Then go to https://github.com/Archiv8 and find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page
       options:
-        - yes
-        - no
+        - "yes"
+        - "no"
   - type: textarea
     id: what-happened
     attributes:
