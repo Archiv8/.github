@@ -36,6 +36,6 @@ body:
       label: Arch Linux
       description: Is Arch Linux Up To Date
       options:
-         - label: "yes"
-         - label: "no"
+        - label: "yes"
+        - label: "no"
         required: true
