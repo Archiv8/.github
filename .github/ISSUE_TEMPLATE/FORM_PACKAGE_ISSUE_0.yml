@@ -1,0 +1,111 @@
+name: Package Issues
+description: "Use this form to report an issue, suggest an improvement or report an outdated package"
+title: "[PACKAGE ISSUE]: Add brief description here"
+labels:
+  [
+    "element: package :gift:",
+    "status: new :phone:",
+    "priority: CRITICAL :clock1:",
+    "wait: triage :hospital:",
+  ]
+assignees:
+  - rossclarkartist
+body:
+  - type: markdown
+    attributes:
+      value: _**Assistance is available for using this form.  See [reporting an issue with a package](https://archiv8.github.io/support/issues/package-issue) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form
+  - type: input
+    id: package-name
+    attributes:
+      label: Package effected by the issue
+      description: Give the full name of the package
+      placeholder: pacman
+    validations:
+        required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What type of issue are you experiencing?
+      multiple: true
+      options:
+        - Package is out of date
+        - Package will not build
+        - Request a new package
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: other-issue
+    attributes:
+      label: If other was selected give a one sentence description
+      placeholder: The package is ...
+    validations:
+      required: false
+  - type: input
+    id: issue-version
+    attributes:
+      label: Package out of date
+      description: If the package is out of date what is the latest upstream version.
+      placeholder: 0.8.2
+    validations:
+      required: false
+  - type: checkboxes
+    id: issue-upstream
+    attributes:
+      label: Upstream Issue
+      description: Have you looked to see whether the build issue has been reported upstream
+      options:
+        - "yes"
+        - "no"
+  - type: checkboxes
+    id: release-package
+    attributes:
+      label: Is the downloaded package an official Archiv8 release?  Select either yes or no
+      description: Downloading or cloning a package from the main branch is not supported. If unsure go to https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page
+      options:
+        - "yes"
+        - "no"
+  - type: checkboxes
+    id: latest-version-depends
+    attributes:
+      label: Are the latest versions of the package dependencies available and installed?
+      description: Open the package build and look for a comment entitled, Archiv8 / AUR, above packages listed in the makedepends and depends variables. Then go to https://github.com/Archiv8 and find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page
+      options:
+        - "yes"
+        - "no"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe what happened in as much detail as possible.  Break the information down into easy to follow steps. Include how the package was being built. For example was a chroot being used or makepkg?"
+      placeholder: Use of available formatting options is suggested.  For example, using a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks
+  - type: textarea
+    id: further-info
+    attributes:
+      label: Further Information
+      description: Is there more information that will be helpful. Please give as much information as possible.
+      placeholder: Use of available formatting options is suggested.  For example, using a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks
+  - type: textarea
+    id: fix
+    attributes:
+      label: Help fixing the issue
+      description: Contributions are always welcome
+      placeholder: Guidance is provided through the Archiv8 website at https://Archiv8.github.io/contributing.  Also https://docs.github.com/en/pull-requests has further information
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Community Guidelines
+      description: The community guidelines are intended to encourage and grow a healthy community
+      options:
+        - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community)
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_PACKAGE). _**Open the link in a new browser tab or window to prevent the loss of data**_"
+  - type: markdown
+    attributes:
+      value: (c) Ross Clark and Archiv8 2021 - 2022
+  - type: markdown
+    attributes:
+      value: This form is released under the Creative Commons Attribution-ShareAlike 4.0 International License
