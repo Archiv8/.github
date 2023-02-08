@@ -1,5 +1,5 @@
-name: Package Issues
-description: "Report an issue with a package"
+name: Package Build Issues
+description: "Report an issue that occurs when building a package"
 title: "[PACKAGE ISSUE]: Add brief description here"
 labels:
   [
