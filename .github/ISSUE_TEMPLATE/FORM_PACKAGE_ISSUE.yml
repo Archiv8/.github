@@ -15,37 +15,37 @@ body:
     attributes:
       value: "_**Assistance is available for using this form.  See [reporting an issue with a package](https://archiv8.github.io/support/issues/package-issue) on the Archiv8 website**_. Opening this link in a new tab or window is recommended to prevent losing any data from this form"
   - type: input
-      id: package-name
-      attributes:
-        label: Package effected by the issue
-        description: "Give the full name of the package"
+    id: package-name
+    attributes:
+      label: Package effected by the issue
+         "Give the full name of the package"
         placeholder: "pacman"
-      validations:
+    validations:
         required: true
   - type: dropdown
-      id: issue-type
-      attributes:
-        label: What type of issue are you experiencing?
+    id: issue-type
+    attributes:
+      label: What type of issue are you experiencing?
         multiple: true
         options:
           - Package is out of date
           - Package will not build
           - Request a new package
           - Other
-      validations:
+    validations:
         required: true
   - type: input
-      id: other-issue
-        label: If other was selected give a one sentence description
+    id: other-issue
+      label: If other was selected give a one sentence description
         placeholder: "The package is ..."
-      validations:
+    validations:
       required: false
   - type: input
-      id: issue-version
-        label: Package out of date
-        description: If the package is out of date what is the latest upstream version.
+    id: issue-version
+      label: Package out of date
+      description: If the package is out of date what is the latest upstream version.
         placeholder: "0.8.2"
-      validations:
+    validations:
       required: false
   - type: checkboxes
     id: issue-upstream
