@@ -36,8 +36,9 @@ body:
       required: true
   - type: input
     id: other-issue
-      label: If other was selected give a one sentence description
-      placeholder: "The package is ..."
+      - attributes:
+        label: If other was selected give a one sentence description
+        placeholder: "The package is ..."
     validations:
       required: false
   - type: input
