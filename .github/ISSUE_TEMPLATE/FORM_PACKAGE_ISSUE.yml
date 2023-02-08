@@ -18,8 +18,8 @@ body:
     id: package-name
     attributes:
       label: Package effected by the issue
-         "Give the full name of the package"
-        placeholder: "pacman"
+      description: "Give the full name of the package"
+      placeholder: "pacman"
     validations:
         required: true
   - type: dropdown
@@ -37,14 +37,14 @@ body:
   - type: input
     id: other-issue
       label: If other was selected give a one sentence description
-        placeholder: "The package is ..."
+      placeholder: "The package is ..."
     validations:
       required: false
   - type: input
     id: issue-version
       label: Package out of date
       description: If the package is out of date what is the latest upstream version.
-        placeholder: "0.8.2"
+      placeholder: "0.8.2"
     validations:
       required: false
   - type: checkboxes
