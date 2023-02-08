@@ -95,7 +95,7 @@ body:
     id: terms
     attributes:
       label: Community Guidelines
-      description: The community guidelines are intended to encourage and grow a healthy community:
+      description: The community guidelines are intended to encourage and grow a healthy community
       options:
         - label: By submitting this issue I am agreeing to follow Archiv8's [community guidelines](https://archiv8.github.io/community)
           required: true
