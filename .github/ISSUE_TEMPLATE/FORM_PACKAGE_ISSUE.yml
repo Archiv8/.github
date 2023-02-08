@@ -17,7 +17,7 @@ body:
   - type: input
       id: package-name
       attributes:
-        label: "Package effected by the issue"
+        label: Package effected by the issue
         description: "Give the full name of the package"
         placeholder: "pacman"
       validations:
@@ -25,7 +25,7 @@ body:
   - type: dropdown
       id: issue-type
       attributes:
-        label: "What type of issue are you experiencing?"
+        label: What type of issue are you experiencing?
         multiple: true
         options:
           - Package is out of date
@@ -36,42 +36,42 @@ body:
         required: true
   - type: input
       id: other-issue
-        label: "If other was selected give a one sentence description"
+        label: If other was selected give a one sentence description
         placeholder: "The package is ..."
       validations:
       required: false
   - type: input
       id: issue-version
-        label: "Package out of date"
-        description: "If the package is out of date what is the latest upstream version."
+        label: Package out of date
+        description: If the package is out of date what is the latest upstream version.
         placeholder: "0.8.2"
       validations:
       required: false
   - type: checkboxes
     id: issue-upstream
     attributes:
-      label: "Upstream Issue"
-      description: "Have you looked to see whether the build issue has been reported upstream"
+      label: Upstream Issue
+      description: Have you looked to see whether the build issue has been reported upstream
       options:
-        - label: "yes"
-        - label: "no"
+        - yes
+        - no
   - type:
   - type: checkboxes
     id: release-package
     attributes:
-      label: "Is the downloaded package an official Archiv8 release?  Select either yes or no"
+      label: Is the downloaded package an official Archiv8 release?  Select either yes or no
       description: "Downloading or cloning a package from the main branch is not supported. If unsure go to https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page"
       options:
-        - label: "yes"
-        - label: "no"
+        - yes
+        - no
   - type: checkboxes
     id: latest-version-depends
     attributes:
       label: "Are the latest versions of the package dependencies available and installed?"
       description: "Open the package build and look for a comment entitled, Archiv8 / AUR, above packages listed in the makedepends and depends variables. Then go to https://github.com/Archiv8 and find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page"
       options:
-        - label: "yes"
-        - label: "no"
+        - yes
+        - no
   - type: textarea
     id: what-happened
     attributes:
