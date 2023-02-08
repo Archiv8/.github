@@ -22,3 +22,21 @@ body:
       placeholder: pacman
     validations:
         required: true
+  - type: input
+    id: package-version
+    attributes:
+      label: The version of the package effected by the issue
+      description: Give the full version number
+      placeholder: pacman
+    validations:
+        required: true
+  - type: checkboxes
+    id: arch-updated
+    attributes:
+      label: Arch Linux
+      description: Is Arch Linux Up To Date
+      options:
+         - "yes"
+         - "no"
+    validations:
+        required: true
