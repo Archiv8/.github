@@ -26,8 +26,8 @@ body:
     id: package-version
     attributes:
       label: The version of the package effected by the issue
-      description: Give the full version number
-      placeholder: pacman
+      description: Give the full version number. For example, for aurutils-10b-1, the version number would be _**10b-1**_
+      placeholder: 10b-1
     validations:
         required: true
   - type: checkboxes
@@ -44,7 +44,7 @@ body:
     id: package-updated
     attributes:
       label: Arch Linux
-      description: Is the latest version of the package from the Archiv8 repository being built. If unsure go to https://github.com/Archiv8 then find the appropriate repository.  Click on tags, then check the version number of the downloaded package matches the top release on the page
+      description: Is the latest version of the package from the Archiv8 repository being built. If unsure go to https://github.com/Archiv8 then search for the appropriate repository.  Click on tags. Now check the version number of the downloaded package matches the top release on the page
       options:
         - label: "yes"
         - label: "no"
@@ -55,8 +55,17 @@ body:
     attributes:
       label: How is the package being built?
       description: What method is being used to build the package?
+      multiple: true
       options:
         - makepkg
         - other
     validations:
       required: true
+  - type: textarea
+    id: depends
+    attributes:
+      label: Dependencies
+      description: How did you handle Archiv8 dependencies.  The recommended way is to place **only** the Archiv8 dependencies that are needed in a custom local repository.
+      value: I used a ...
+    validations:
+      required: false
