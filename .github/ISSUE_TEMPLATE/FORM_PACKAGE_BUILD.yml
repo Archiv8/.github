@@ -98,7 +98,7 @@ body:
       required: true
   - type: markdown
     attributes:
-      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_FORM.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_PACKAGE_BUILD). _**Open the link in a new browser tab or window to prevent the loss of data**_"
+      value: "[Suggest An Improvement To This Form](https://github.com/Archiv8/.github/issues/new?assignees=rossclarkartist&labels=element%3A+form+%3Ascroll%3A%2Cstatus%3A+new+%3Aphone%3A%2Cpriority%3A+NORMAL+%3Acalendar%3A%2Cwait%3A+triage+%3Ahospital%3A&template=FORM_OTHER.yml&title=%5BFORM%5D%3A+Improvement+for+FORM_PACKAGE_BUILD). _**Open the link in a new browser tab or window to prevent the loss of data**_"
   - type: markdown
     attributes:
       value: (c) Ross Clark and Archiv8 2021 - 2022
