@@ -58,6 +58,8 @@ body:
       multiple: true
       options:
         - makepkg
+        - aurutils
+        - other clean chroot
         - other
     validations:
       required: true
