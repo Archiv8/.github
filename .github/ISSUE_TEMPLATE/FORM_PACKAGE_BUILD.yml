@@ -75,7 +75,7 @@ body:
       label: Further Information
       description: Is there more information that will be helpful. Please give as much information as possible.
       placeholder: Use of available formatting options is suggested.  For example, using a numbered list when describing the build process will improve triage and response times by separating the information into easily identifiable chunks
-        validations:
+    validations:
       required: false
   - type: textarea
     id: fix
