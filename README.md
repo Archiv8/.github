@@ -7,7 +7,7 @@ Common GitHub resources that are used automatically across the repository.  Thes
   + Application or Api, [FORM_APP.yml](.github/ISSUE_TEMPLATE/FORM_APP.yml)
   + Community, [FORM_COMMUNITY.yml](.github/ISSUE_TEMPLATE/FORM_COMMUNITY.yml)
   + Documentation, [FORM_DOC.yml](.github/ISSUE_TEMPLATE/FORM_DOC_.yml)
-  + Other, [FORM_FORM.yml](.github/ISSUE_TEMPLATE/FORM_FORM.yml)
+  + Other, [FORM_OTHER.yml](.github/ISSUE_TEMPLATE/FORM_OTHER.yml)
   + Package Issue, [FORM_PACKAGE.yml](.github/ISSUE_TEMPLATE/FORM_PACKAGE.yml)
   + Package Outdated, [FORM_PACKAGE_OUTDATED.yml](.github/ISSUE_TEMPLATE/FORM_PACKAGE_OUTDATED.yml)
   + Package Request, [FORM_PACKAGE_REQUEST.yml](.github/ISSUE_TEMPLATE/FORM_PACKAGE_REQUEST.yml)
